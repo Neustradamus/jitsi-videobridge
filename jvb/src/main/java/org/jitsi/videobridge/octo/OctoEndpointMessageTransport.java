@@ -80,6 +80,7 @@ class OctoEndpointMessageTransport
         // only those that reference an endpoint local to this bridge.
         if (endpoint instanceof Endpoint)
         {
+            // TODO Implement source name based receiver constraints for Octo
             endpoint.addReceiver(message.getBridgeId(), message.getVideoConstraints());
         }
 
@@ -96,6 +97,7 @@ class OctoEndpointMessageTransport
         // only those that reference an endpoint local to this bridge.
         if (endpoint instanceof Endpoint)
         {
+            // TODO Implement source name based receiver constraints for Octo
             endpoint.removeReceiver(message.getBridgeId());
         }
 

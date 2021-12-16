@@ -285,7 +285,7 @@ public class BandwidthAllocator<T extends MediaSourceContainer>
         allocation = newAllocation;
 
         boolean effectiveConstraintsChanged = !effectiveConstraints.equals(oldEffectiveConstraints);
-        logger.trace(() -> "Finished allocation: allocationChanged=" + allocationChanged
+        logger.info(() -> "Finished allocation: allocationChanged=" + allocationChanged
                 + " effectiveConstraintsChanged=" + effectiveConstraintsChanged);
         if (effectiveConstraintsChanged)
         {
